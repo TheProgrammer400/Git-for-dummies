@@ -192,3 +192,40 @@ Many repos use ```main``` instead of ```master```, so you need to write:
 git push origin main
 ```
 
+## Branches in GitHub
+
+A **branch** in GitHub is like a seperate version of your project where you can make changes **without affecting the main code.** It allows multiple people to work on different features or fixes at the same time.
+
+### Key Points:
+
+- The ```main``` or ```master``` **branch** is the default and usually constains the stable code.
+- You can create a **new branch** to work on a feature or fix a bug.
+- Once done, you can merge the branch back into ```main```.
+
+### Commands:
+
+- To create a branch:
+
+    ```
+    git branch new-feature
+    ```
+
+- Swtich to another branch:
+
+    ```
+    git checkout new-feature
+    ```
+
+- Create & swtich in one command:
+
+    ```
+    git checkout -b new-feature
+    ```
+
+- Push a branch into GitHub
+
+    ```
+    git push origin new-feature
+    ```
+
+Using branches keeps your project **organized, clean and safe** from breaking changes.

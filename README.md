@@ -109,7 +109,7 @@ git log
 - ```git log since="2 weeks ago"```: Shows commits from the last 2 weeks.
 - ```git log --oneline --graph```: Displays graph of commit history
 
-## Rewinding your changes and history
+## Rewinding changes your changes and history
 
 ```git reset``` is used to rewind the Git history, allowing you to move the **head pointer** to previous commit and adjust the staging area and working directory accordingly. 
 
@@ -134,3 +134,61 @@ Date:   Mon March 17 12:07:15 2023 +0530
 ```
 
 Here, ```<commit-id>``` is ```72c799d35c94140742fb9b68aa833477aa75b0bd```
+
+
+## Connecting local folder to a GitHub repository
+
+To connect a local project folder to a GitHub repository, you need to link your local Git repository with the remote GitHub repo. This allows you to push your changes and keep your project synchronized. You achieve this by adding the remote URL using ```git remote add origin <repo-url>``` ensuring your local work can be tracked and shared on GitHub.
+
+### Command:
+
+```
+git remote add origin <repo-url>
+```
+
+Here:
+- ```remote``` means that you're working with URLs.
+- ```origin``` is the name of the URL you're going to add.
+
+## Viewing Remote Repsoitory Details
+
+The ```git remote -v``` command displays the remote repositories linked to your local Git project. It shows both the **fetch** and **push** URLs, helping you verify the remote connections.
+
+### Commands:
+
+```
+git remote -v
+```
+
+### Example Output:
+
+```
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
+```
+
+Above output confirms that ```origin``` is linked to your GitHub repository for both fetching updates and pushing changes.
+
+## Uploading Changes To The Remote repository
+
+The command ```git push origin master``` is used to push your local changes to the remote repository on the **master** branch.
+
+### Command:
+
+```
+git push origin master
+```
+
+Here:
+- ```git push```: Pushes your commits to the repository.
+- ```origin```: The default name for the repository.
+- ```master```: The branch where the changes will be pushed.
+
+### Note:
+
+Many repos use ```main``` instead of ```master```, so you need to write:
+
+```
+git push origin main
+```
+

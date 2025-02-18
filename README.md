@@ -109,7 +109,7 @@ git log
 - ```git log since="2 weeks ago"```: Shows commits from the last 2 weeks.
 - ```git log --oneline --graph```: Displays graph of commit history
 
-## Rewinding changes your changes and history
+## Rewinding your changes and history
 
 ```git reset``` is used to rewind the Git history, allowing you to move the **head pointer** to previous commit and adjust the staging area and working directory accordingly. 
 

@@ -229,3 +229,22 @@ A **branch** in GitHub is like a seperate version of your project where you can 
     ```
 
 Using branches keeps your project **organized, clean and safe** from breaking changes.
+
+## Copying a Remote Respository Locally
+
+The ```git clone``` command is used to **create a local copy** of a remote Git repository. This allows you to download the entire project, including its commit history, and work it on locally.
+
+### Command:
+
+```
+git clone <repo-url>
+```
+
+This command will create a folder named ```repo``` inn your local system and copy all the repository files into it.
+
+### Key Points:
+- It **copies** entire repo, including branch and history.
+- You can start working locally immediately.
+- It **automatically sets up** ```origin``` as the remote repository.
+
+This command is essential for contributing in **open source projects** or working with repositories hosted on GitHub.

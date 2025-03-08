@@ -9,7 +9,7 @@ Git is a version control system that helps you track changes in your code. It le
 
 ### Initialize Git
 
-```
+```bash
 git init
 ```
 
@@ -26,7 +26,7 @@ This command inilializes a new git repo in your project folder
 
 After running following command:
 
-```
+```bash
 ls -a
 ```
 
@@ -44,7 +44,7 @@ It shows:
 
 ### Command:
 
-```
+```bash
 git status
 ```
 
@@ -58,7 +58,7 @@ Staging is like putting files in a bagpack before submitting them.
 
 ### Command:
 
-```
+```bash
 git add filename.txt
 git add .
 ```
@@ -72,7 +72,7 @@ Unstaging refers to the process of taking out files out after you've added them 
 
 ### Command:
 
-```
+```bash
 git restore --staged filename.txt
 ```
 
@@ -85,7 +85,7 @@ Commiting is like **saving your progress in a game**, it takes a snapshot of you
 
 ### Command:
 
-```
+```bash
 git commit -m "commit message"
 ```
 
@@ -99,7 +99,7 @@ git commit -m "commit message"
 
 ### Command:
 
-```
+```bash
 git log
 ```
 
@@ -115,7 +115,7 @@ git log
 
 ### Command:
 
-```
+```bash
 git reset <commit-id>
 ```
 
@@ -125,7 +125,7 @@ Here: ```<commit-id>``` is the ID when you use ```git log``` command
 
 Assume after executing ```git log``` command, following is your output:
 
-```
+```bash
 commit 72c799d35c94140742fb9b68aa833477aa75b0bd
 Author: Unknown Guy <unknownGuyk@gmail.com>
 Date:   Mon March 17 12:07:15 2023 +0530
@@ -142,7 +142,7 @@ To connect a local project folder to a GitHub repository, you need to link your 
 
 ### Command:
 
-```
+```bash
 git remote add origin <repo-url>
 ```
 
@@ -156,13 +156,13 @@ The ```git remote -v``` command displays the remote repositories linked to your 
 
 ### Commands:
 
-```
+```bash
 git remote -v
 ```
 
 ### Example Output:
 
-```
+```bash
 origin  https://github.com/user/repo.git (fetch)
 origin  https://github.com/user/repo.git (push)
 ```
@@ -175,7 +175,7 @@ The command ```git push origin master``` is used to push your local changes to t
 
 ### Command:
 
-```
+```bash
 git push origin master
 ```
 
@@ -188,7 +188,7 @@ Here:
 
 Many repos use ```main``` instead of ```master```, so you need to write:
 
-```
+```bash
 git push origin main
 ```
 
@@ -206,25 +206,25 @@ A **branch** in GitHub is like a seperate version of your project where you can 
 
 - To create a branch:
 
-    ```
+    ```bash
     git branch new-feature
     ```
 
 - Swtich to another branch:
 
-    ```
+    ```bash
     git checkout new-feature
     ```
 
 - Create & swtich in one command:
 
-    ```
+    ```bash
     git checkout -b new-feature
     ```
 
 - Push a branch into GitHub
 
-    ```
+    ```bash
     git push origin new-feature
     ```
 
@@ -236,7 +236,7 @@ The ```git clone``` command is used to **create a local copy** of a remote Git r
 
 ### Command:
 
-```
+```bash
 git clone <repo-url>
 ```
 
